@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PokemonList from './components/PokemonList';
 
-function App() {
+const App = () => {
+
+  const pokemons = ['Arcanine', 'Beedrill', 'Blastoise', 'Bulbasaur', 'Butterfree', 'Caterpie', 'Charizard', 'Charmander', 'Charmeleon', 'Clefable', 'Dewgong', 'Farfetchd', 'Golbat', 'Ivysaur', 'Kadabra', 'Kakuna', 'Metapod', 'Pidgeot', 'Pidgeotto', 'Pidgey', 'Pikachu', 'Ponyta', 'Raichu', 'Raticate', 'Rattata', 'Squirtle', 'Venusaur', 'Vulpix', 'Wartortle', 'Weedle'];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='centered'>
+      <div className='app'>
+        <div className='header'>
+          <h1>Pokelist App</h1>
+          <span>Delivery 1</span>
+        </div>
+
+        <PokemonList pokemons={pokemons} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
