@@ -14,7 +14,7 @@
     flex: 0 1 calc(25% - 1em);
 
     box-sizing: border-box;
-    margin: 1rem .25em;
+    margin: 0.5rem;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -33,5 +33,8 @@
   
   /* Add some padding inside the card container */
   .pokemon-card .container {
-    padding: 1.4em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
   }
