@@ -1,19 +1,19 @@
 [
     {
         "name": "Arcanine",
-        "image": "./pokemons/arcanine.png"
+        "image": "./pokemons/Arcanine.png"
     },
     {
         "name": "Beedrill",
-        "image": "./pokemons/beedrill.png"
+        "image": "./pokemons/Beedrill.png"
     },
     {
         "name": "Blastoise",
-        "image": "./pokemons/blastoise.png"
+        "image": "./pokemons/Blastoise.png"
     },
     {
         "name": "Bulbasaur",
-        "image": "./pokemons/bulbasaur.png"
+        "image": "./pokemons/Bulbasaur.png"
     },
     {
         "name": "Butterfree",
