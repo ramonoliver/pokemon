@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import './components/PokemonList.css';
 import './components/PokemonCard.css';
+import './components/PokemonForm.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

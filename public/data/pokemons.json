@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Arcanine",
+        "image": "./pokemons/arcanine.png"
+    },
+    {
+        "name": "Beedrill",
+        "image": "./pokemons/beedrill.png"
+    },
+    {
+        "name": "Blastoise",
+        "image": "./pokemons/blastoise.png"
+    },
+    {
+        "name": "Bulbasaur",
+        "image": "./pokemons/bulbasaur.png"
+    },
+    {
+        "name": "Butterfree",
+        "image": "./pokemons/Butterfree.png"
+    },
+    {
+        "name": "Caterpie",
+        "image": "./pokemons/Caterpie.png"
+    },
+    {
+        "name": "Charizard",
+        "image": "./pokemons/Charizard.png"
+    },
+    {
+        "name": "Charmander",
+        "image": "./pokemons/Charmander.png"
+    },
+    {
+        "name": "Charmeleon",
+        "image": "./pokemons/Charmeleon.png"
+    },
+    {
+        "name": "Clefable",
+        "image": "./pokemons/Clefable.png"
+    },
+    {
+        "name": "Dewgong",
+        "image": "./pokemons/Dewgong.png"
+    },
+    {
+        "name": "Farfetchd",
+        "image": "./pokemons/Farfetchd.png"
+    },
+    {
+        "name": "Golbat",
+        "image": "./pokemons/Golbat.png"
+    },
+    {
+        "name": "Ivysaur",
+        "image": "./pokemons/Ivysaur.png"
+    },
+    {
+        "name": "Kadabra",
+        "image": "./pokemons/Kadabra.png"
+    },
+    {
+        "name": "Kakuna",
+        "image": "./pokemons/Kakuna.png"
+    },
+    {
+        "name": "Metapod",
+        "image": "./pokemons/Metapod.png"
+    },
+    {
+        "name": "Pidgeot",
+        "image": "./pokemons/Pidgeot.png"
+    },
+    {
+        "name": "Pidgeotto",
+        "image": "./pokemons/Pidgeotto.png"
+    },
+    {
+        "name": "Pidgey",
+        "image": "./pokemons/Pidgey.png"
+    },
+    {
+        "name": "Pikachu",
+        "image": "./pokemons/Pikachu.png"
+    },
+    {
+        "name": "Ponyta",
+        "image": "./pokemons/Ponyta.png"
+    },
+    {
+        "name": "Raichu",
+        "image": "./pokemons/Raichu.png"
+    },
+    {
+        "name": "Raticate",
+        "image": "./pokemons/Raticate.png"
+    },
+    {
+        "name": "Rattata",
+        "image": "./pokemons/Rattata.png"
+    },
+    {
+        "name": "Squirtle",
+        "image": "./pokemons/Squirtle.png"
+    },
+    {
+        "name": "Venusaur",
+        "image": "./pokemons/Venusaur.png"
+    },
+    {
+        "name": "Vulpix",
+        "image": "./pokemons/Vulpix.png"
+    },
+    {
+        "name": "Wartortle",
+        "image": "./pokemons/Wartortle.png"
+    },
+    {
+        "name": "Weedle",
+        "image": "./pokemons/Weedle.png"
+    }
+  ]

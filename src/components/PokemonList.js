@@ -1,24 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import InfiniteScroll from 'react-infinite-scroll-component';
 import PokemonCard from './PokemonCard';
-import AddPokemonForm from './AddPokemonForm';
 
-const PokemonList = () => {
-  const [pokemons, setPokemons] = useState(['bulbasaur', 'charmander', 'pikachu']);
+const PokemonList = ({ pokemons }) => {
+  const [visiblePokemons, setVisiblePokemons] = useState(20); // Quantidade inicial de pokemons visíveis
 
-  const handleAddPokemon = (newPokemon) => {
-    // Update the state with the new Pokemon
-    setPokemons((prevPokemons) => [...prevPokemons, newPokemon.name]);
+  const loadMorePokemons = () => {
+    // Carrega mais 4 pokemons ao fazer scroll
+    setVisiblePokemons((prevVisiblePokemons) => prevVisiblePokemons + 4);
   };
 
   return (
-    <div className="pokemon-list">
-      <div className='pokemon-form'>
-        <AddPokemonForm onAddPokemon={handleAddPokemon} />
+    <InfiniteScroll
+      dataLength={visiblePokemons}
+      next={loadMorePokemons}
+      hasMore={visiblePokemons < pokemons.length}
+      loader={<h4>Carregando...</h4>}
+    >
+      <div className="pokemon-list">
+        {pokemons.slice(0, visiblePokemons).map((pokemon) => (
+          <PokemonCard key={pokemon.name} name={pokemon.name} image={pokemon.image} />
+        ))}
       </div>
-      {pokemons.map((pokemon) => (
-        <PokemonCard key={pokemon} name={pokemon} />
-      ))}
-    </div>
+    </InfiniteScroll>
   );
 };
 

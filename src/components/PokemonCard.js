@@ -1,12 +1,11 @@
 import React from 'react';
 
-const PokemonCard = ({ name }) => {
-  const imageUrl = `/pokemons/${name}.png`; 
+const PokemonCard = ({ name, image }) => {
 
   return (
     <div className="pokemon-card">
         <div className='image'>
-            <img src={imageUrl} alt={name} />
+            <img src={image} alt={name} />
         </div>
         <div className="container">
             <h4>{name}</h4>

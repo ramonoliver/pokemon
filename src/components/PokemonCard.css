@@ -17,7 +17,6 @@
     margin: 0.5rem;
   }
   
-  /* On mouse-over, add a deeper shadow */
   .pokemon-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
@@ -29,6 +28,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .pokemon-card .image img {
+    width: 96px;
+    height: 96px;
   }
   
   /* Add some padding inside the card container */

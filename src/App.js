@@ -1,24 +1,43 @@
-import React, { useState } from 'react';
+// src/App.js
+import React, { useState, useEffect } from 'react';
 import PokemonList from './components/PokemonList';
-import PokemonForm from './components/AddPokemonForm';
+import PokemonForm from './components/PokemonForm';
 
 const App = () => {
+  const [pokemons, setPokemons] = useState([]);
 
-  const [pokemons, setPokemons] = useState(['Arcanine', 'Beedrill', 'Blastoise', 'Bulbasaur', 'Butterfree', 'Caterpie', 'Charizard', 'Charmander', 'Charmeleon', 'Clefable', 'Dewgong', 'Farfetchd', 'Golbat', 'Ivysaur', 'Kadabra', 'Kakuna', 'Metapod', 'Pidgeot', 'Pidgeotto', 'Pidgey', 'Pikachu', 'Ponyta', 'Raichu', 'Raticate', 'Rattata', 'Squirtle', 'Venusaur', 'Vulpix', 'Wartortle', 'Weedle']);
+  useEffect(() => {
+    // Carregar a lista de pokémons da sua fonte de dados local
+    // Aqui você pode fazer uma requisição para um arquivo JSON local ou qualquer outra fonte de dados
+    const fetchData = async () => {
+      // Exemplo: carregar dados de um arquivo JSON local
+      const response = await fetch('/data/pokemons.json');
+      const data = await response.json();
+      setPokemons(data);
+    };
+
+    fetchData();
+  }, []);
+
+  //const handleAddPokemon = (newPokemon) => {
+  //  Adiciona o novo pokemon na lista
+  //  setPokemons([...pokemons, newPokemon]);
+  //};
 
   const handleAddPokemon = (newPokemon) => {
-    setPokemons((prevPokemons) => [...prevPokemons, newPokemon.name]);
+    // Atualiza o estado da lista de pokémons com o novo Pokémon
+    setPokemons((prevPokemons) => [...prevPokemons, newPokemon]);
   };
 
   return (
-    <div className='centered'>
-      <div className='app'>
-        <div className='header'>
-          <h1>Pokelist App</h1>
-          <span>Delivery 1</span>
-        </div>
-        <PokemonList />
+    <div className="app">
+      <h1>Pokemon App</h1>
+      
+      <div className="pokemon-form">
+        <PokemonForm onAddPokemon={handleAddPokemon} />
       </div>
+      
+      <PokemonList pokemons={pokemons} />
     </div>
   );
 };

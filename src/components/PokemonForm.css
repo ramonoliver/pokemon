@@ -1,0 +1,10 @@
+.pokemon-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.pokemon-form label {
+    display: inline-block;
+    margin-right: 24px;
+}
