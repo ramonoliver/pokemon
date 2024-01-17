@@ -3,10 +3,10 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import PokemonCard from './PokemonCard';
 
 const PokemonList = ({ pokemons }) => {
-  const [visiblePokemons, setVisiblePokemons] = useState(20); // Quantidade inicial de pokemons visíveis
+  const [visiblePokemons, setVisiblePokemons] = useState(20); // Qnt inicial
 
   const loadMorePokemons = () => {
-    // Carrega mais 4 pokemons ao fazer scroll
+    // Carrega mais 4 ao fazer scroll
     setVisiblePokemons((prevVisiblePokemons) => prevVisiblePokemons + 4);
   };
 

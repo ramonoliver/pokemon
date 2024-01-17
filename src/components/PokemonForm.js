@@ -1,4 +1,3 @@
-// src/components/PokemonForm.js
 import React, { useState } from 'react';
 
 const PokemonForm = ({ onAddPokemon }) => {
@@ -15,9 +14,9 @@ const PokemonForm = ({ onAddPokemon }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Adiciona o novo Pokémon à lista
+    // Adiciona o novo pokemon na lista
     onAddPokemon({ name, image });
-    // Limpa os campos após a adição
+    // Limpa os campos
     setName('');
     setImage('');
   };

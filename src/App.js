@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import PokemonList from './components/PokemonList';
 import PokemonForm from './components/PokemonForm';
@@ -25,7 +24,7 @@ const App = () => {
   //};
 
   const handleAddPokemon = (newPokemon) => {
-    // Atualiza o estado da lista de pokémons com o novo Pokémon
+    // Atualiza o estado da lista de pokemons com o novo Pokémon
     setPokemons((prevPokemons) => [...prevPokemons, newPokemon]);
   };
 
